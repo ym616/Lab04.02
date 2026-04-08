@@ -14,7 +14,7 @@ public class CoinSorterMachine {
     private String fileName;
 
     /**
-     * Initializes the machine maps and prompts for the input file.
+     * initializes the  maps and prompts for the input file.
      */
     public CoinSorterMachine() {
         coins = new ArrayList<>();
@@ -43,7 +43,7 @@ public class CoinSorterMachine {
     }
 
     /**
-     * Reads coin data from the specified file and sorts them.
+     * reads coin data from the specified file and sorts them.
      */
     public void depositCoins() {
         if (fileName.equals("0")) return;
@@ -71,7 +71,7 @@ public class CoinSorterMachine {
     }
 
     /**
-     * Prints the summary of all coins deposited and the total value.
+     * prints summary of all coins deposited and the total value.
      */
     public void printDepositSummary() {
         DecimalFormat df = new DecimalFormat("$0.00");
@@ -89,7 +89,7 @@ public class CoinSorterMachine {
     }
 
     /**
-     * Calculates the total value of all coins in the list.
+     * calculates the total value of all coins in the list.
      * @return total double value
      */
     public double getTotalValue() {

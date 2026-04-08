@@ -1,4 +1,19 @@
-package PACKAGE_NAME;
+/**
+ * Penny class overrides abstract coin
+ * @version 3/26/2026
+ * @author 28mehta
+ */
 
-public class Penny {
+public class Penny extends Coin {
+
+
+    @Override
+    public double getValue() {
+        return 0.01;
+    }
+
+    @Override
+    public String getName() {
+        return "penny";
+    }
 }
